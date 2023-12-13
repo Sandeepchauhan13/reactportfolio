@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
-
+// import React from "react";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Experience from "./components/Experience";
+import Home from "./components/Home";
+import NavBar from "./components/NavBar";
+import Portfolio from "./components/Portfolio";
+import SocialLinks from "./components/SocialLinks";
+// import { BrowserRouter,Routes,Route } from "react-router-dom";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+  <NavBar />
+  <Home />
+  <About/>
+  <Portfolio />
+  <Experience />
+  <Contact />
+  <SocialLinks />
+
+  {/* <BrowserRouter>
+  
+       <NavBar /> 
+      <Routes>
+  <Route path='/' element={<Home />}></Route>
+  <Route path='/services' element={<About />}></Route>
+  <Route path='/contact' element={<Portfolio />}></Route>
+  <Route path='/about' element={<Experience />}></Route>
+  <Route path='/about' element={<Contact />}></Route>
+  <Route path='/about' element={<SocialLinks />}></Route> */}
+ 
+  {/* <Redirect to ='/' /> */}
+  {/* </Routes>
+        </BrowserRouter> */}
+  
+   </>
   );
 }
 
